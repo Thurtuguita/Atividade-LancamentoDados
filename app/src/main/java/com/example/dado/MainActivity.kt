@@ -58,7 +58,7 @@ fun DiceWithButtonAndImage(
     modifier: Modifier = Modifier
     .fillMaxSize()
     .wrapContentSize(Alignment.Center)){
-var result by remember { mutableStateOf(1) } // retorna um elemento observável. significa que, quando o valor da variável result muda, uma recomposição é acionada, o valor do resultado é refletido e a interface é atualizada.
+var result by remember { mutableStateOf(1) } // retorna dois elemento observável. significa que, quando o valor da variável result muda, uma recomposição é acionada, o valor do resultado é refletido e a interface é atualizada.
     val imageResource = when (result){
         1 -> R.drawable.dice_1
         2 -> R.drawable.dice_2
